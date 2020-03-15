@@ -1,0 +1,383 @@
+/*----police document----*/
+
+/* Police Rameway et interligne pour tout le site */
+body {
+    font-family: 'Raleway', sans-serif;
+    line-height: 22px;
+}
+
+/* Taille de police titre H2 */
+h2 {
+    font-size: 2em;
+}
+
+/* Taille de police titre H3 et police en gras */
+h3 {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+/* Taille de police paragraphes et style de liste en disque */
+p,
+ul {
+    font-size: 1em;
+    list-style: disc;
+}
+
+/* Saut de ligne trois différentes tailles par classe */
+.saut-ligne {
+    margin-bottom: 1.2em;
+}
+
+.saut-ligne-grand {
+    margin-bottom: 1.5em;
+}
+
+.saut-ligne-double {
+    margin-bottom: 2em;
+}
+
+/* Julien Gabriel en bleu dans à propos */
+.jg-bleu {
+    color: #13afda;
+}
+
+/* Style souligné titre H2 fond bleu */
+.h2-bleu-souligne {
+    border-bottom: 4px solid white;
+}
+
+/* Style souligné titre H2 fond blanc */
+.h2-blanc-souligne {
+    border-bottom: 4px solid #13afda;
+}
+
+/* Texte "Développeur Web" style*/
+.webdesigner {
+    font-weight: bold;
+}
+
+/* H1 chevrons bleu */
+h1 span {
+    color: #13afda;
+}
+
+/*----style header----*/
+
+/* Header en flex, aligne au centre et espacés, fond de couleur blanc, hauteur de 101px, largeur 100%, position fixe sur la page, position au dessus */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    height: 101px;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+}
+
+/* Taille de police titre H1 et marges */
+h1 {
+    font-size: 2em;
+    margin: 0 4%;
+}
+
+/* Taille de police nav et marges */
+nav {
+    margin: 0 3%;
+    font-size: 1em;
+}
+
+/* Espacement mots navigation */
+nav a {
+    margin-left: 20px;
+}
+
+/* Texte navigation par défaut couleur bleu */
+nav a:link {
+    text-decoration: none;
+    color: #13afda;
+}
+
+/* Texte navigation visité couleur bleu */
+nav a:visited {
+    text-decoration: none;
+    color: #13afda;
+}
+
+/*----style profile----*/
+
+/* Banque du profil en flex, largeur 100%, hauteur 681px, image de fond, alignement de la photo et du texte profile en bas et au center  */
+.profile {
+    display: flex;
+    width: 100%;
+    height: 681px;
+    background: url("images/bandeprofile.jpg");
+    align-items: flex-end;
+    justify-content: center;
+}
+
+/* Photo de profil taille 470px de hauteur et largeur*/
+.profile-picture {
+    width: 470px;
+    height: 470px;
+}
+
+/* Texte à côté de photo de profil en flex, aligné à gauche et au centre, en direction colomne, taille de 470px largeur et hauteur, fond couleur blanc */
+.profile-text {
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+    width: 470px;
+    height: 470px;
+    background: white;
+}
+
+/* Marge texte à côté de photo de profil */
+.profile-text h2,
+.profile-text h3,
+.profile-text address,
+.profile-text p {
+    margin: 0 0 0 15%;
+    color: black;
+}
+
+/* Liens texte couleur bleu */
+.profile-text a:link {
+    color: #13afda;
+    margin: 0 0 0 15%;
+}
+
+/*----style a-propos----*/
+
+/* Bande a propos taille et couleur */
+#a-propos {
+    background-color: white;
+    height: 400px;
+    width: 100%;
+}
+
+/* Bande reseaux sociaux en flex et centrage */
+.apropos-bande {
+    display: flex;
+    justify-content: center;
+
+}
+
+/* Bande reseaux sociaux en flex, fond bleu, éléments centrés, taille de 940px de large et 75px de haut */
+.apropos-bande-picto {
+    display: flex;
+    background-color: #13afda;
+    justify-content: center;
+    align-items: center;
+    width: 940px;
+    height: 75px;
+}
+
+/* Liens des pictos en flex, taille des liens de 35px par 35px, marge de 1% */
+.apropos-bande-picto a {
+    display: flex;
+    height: 35px;
+    width: 35px;
+    margin: 1%
+}
+
+/* Pictogrammes en flex, taille des picto de 35px par 35px, marge de 1% */
+.apropos-bande-picto img {
+    height: 35px;
+    width: 35px;
+    margin: 1%;
+}
+
+/* Texte a propos en flex, centre, en direction colonne, marge haut et bas de 5% et gauche et droite de 25%, texte aligne au centre  */
+.a-propos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 5% 25%;
+    text-align: center;
+}
+
+/*----style formations----*/
+
+/* Section formatinons en fond bleu et texte couleur blanc */
+#formations {
+    background-color: #13afda;
+    color: white;
+}
+
+/* Marge texte formations */
+.formations-texte {
+    padding: 5% 0% 5% 18%;
+}
+
+/* Style bordure texte formations*/
+.formations-trait {
+    border-left: solid white 1px;
+    padding-left: 4px;
+}
+
+/*----style experiences----*/
+
+.experiences-texte {
+
+    padding: 5% 18% 5% 18%;
+}
+
+ul {
+    list-style: disc inside;
+}
+
+.experiences-trait {
+    border-left: solid #13afda 1px;
+    padding-left: 4px;
+}
+
+/*----style temoignages----*/
+
+#temoignages {
+    background-color: #13afda;
+    color: white;
+}
+
+.temoignages-h2 {
+    padding: 5% 0% 4% 18%
+}
+
+.temoignages-flex {
+    display: flex;
+    padding: 0% 17% 5% 17%;
+}
+
+.temoignages-text-1,
+.temoignages-text-2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 250%;
+    margin-right: 5em;
+}
+
+.temoignages-text-3 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 250%;
+}
+
+.temoignages-flex blockquote {
+    text-align: center;
+    width: 100%;
+}
+
+.temoignages-flex h3 {
+    text-align: center;
+    width: 100%;
+}
+
+.temoignages-flex img {
+    align-self: flex-end;
+    margin: 8% 50% 0% 50%;
+}
+
+/*----style realisations----*/
+
+.realisations-h2 {
+    padding: 5% 0% 4% 18%;
+}
+
+.realisations-ordinateurs {
+    padding: 0% 0% 0% 10%;
+}
+
+.realisations-ordinateurs img {
+    width: 31%;
+    height: auto;
+    padding-left: 9%;
+    padding-bottom: 5%;
+}
+
+/*----competences----*/
+
+#competences {
+    background-color: #13afda;
+}
+
+.competences-h2 {
+    padding: 5% 0% 4% 18%;
+    color: white;
+}
+
+.comptences-texte {
+    display: flex;
+    padding: 2% 10% 5% 18%;
+    color: white;
+}
+
+.competences-texte-informatique {
+    padding-right: 2%;
+    width: 40%;
+}
+
+.competences-texte-informatique ul,
+.competences-texte-informatique h3 {
+    padding-left: 4px;
+    border-left: solid 1px white;
+}
+
+.competences-texte-linguistique {
+    width: 40%;
+}
+
+.competences-texte-linguistique ul,
+.competences-texte-linguistique h3 {
+    padding-left: 4px;
+    border-left: solid 1px white;
+}
+
+.competences-texte-certifications {
+    width: 40%;
+}
+
+.competences-texte-certifications ul,
+.competences-texte-certifications h3 {
+    padding-left: 4px;
+    border-left: solid 1px white;
+}
+
+
+/*----version mobile header----*/
+
+@media screen and (max-width: 600px) {
+    nav {
+        display: none;
+    }
+
+    header h1 {
+        margin: auto;
+    }
+}
+
+/*----version mobile profile----*/
+
+@media screen and (max-width: 600px) {
+    .profile {
+        background: white;
+        display: inline;
+    }
+
+    .profile-picture {
+        width: 100%;
+        padding-top: 30px;
+    }
+
+    .profile-text {
+        margin: auto;
+        text-align: center;
+    }
+
+    .apropos-bande-picto {
+        width: 100%
+    }
