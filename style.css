@@ -251,6 +251,10 @@ ul {
     padding: 0% 17% 5% 17%;
 }
 
+.temoignages-flex img {
+    width: 32px;
+}
+
 .temoignages-text-1,
 .temoignages-text-2 {
     display: flex;
