@@ -260,7 +260,7 @@ ul {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 250%;
+    width: 3000px;
     margin-right: 5em;
 }
 
@@ -268,7 +268,7 @@ ul {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 250%;
+    width: 3000px;
 }
 
 .temoignages-flex blockquote {
@@ -362,11 +362,16 @@ ul {
     header h1 {
         margin: auto;
     }
+
 }
 
 /*----version mobile profile----*/
 
 @media screen and (max-width: 600px) {
+
+    body {
+        margin-right: 0px;
+    }
     .profile {
         background: white;
         display: inline;
@@ -374,6 +379,7 @@ ul {
 
     .profile-picture {
         width: 100%;
+        height: auto;
         padding-top: 30px;
     }
 
@@ -385,3 +391,5 @@ ul {
     .apropos-bande-picto {
         width: 100%
     }
+
+}
