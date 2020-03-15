@@ -251,10 +251,6 @@ ul {
     padding: 0% 17% 5% 17%;
 }
 
-.temoignages-flex img {
-    width: 32px;
-}
-
 .temoignages-text-1,
 .temoignages-text-2 {
     display: flex;
@@ -284,6 +280,7 @@ ul {
 .temoignages-flex img {
     align-self: flex-end;
     margin: 8% 50% 0% 50%;
+    width: 32px;
 }
 
 /*----style realisations----*/
