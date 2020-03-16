@@ -405,7 +405,6 @@ ul {
   .profile-text a:link {
     margin-left: 0%;
   }
-  
 }
 
 /*----version mobile a-propos----*/
@@ -414,6 +413,10 @@ ul {
   .a-propos {
     display: flex;
     margin: 10% 5%;
+  }
+
+  .a-propos p {
+    text-align: justify;
   }
 }
 
