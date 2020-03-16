@@ -402,6 +402,10 @@ ul {
   .apropos-bande-picto {
     width: 100%;
   }
+  .profile-text a:link {
+    margin-left: 0%;
+  }
+  
 }
 
 /*----version mobile a-propos----*/
