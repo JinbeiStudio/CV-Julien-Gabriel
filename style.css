@@ -1,6 +1,6 @@
 /*----police document----*/
 
-/* Police Rameway et interligne pour tout le site */
+/* Police Rameway et interligne body */
 body {
   font-family: "Raleway", sans-serif;
   line-height: 22px;
@@ -9,6 +9,7 @@ body {
 /* Taille de police titre H2 */
 h2 {
   font-size: 2em;
+  line-height: 30px;
 }
 
 /* Taille de police titre H3 et police en gras */
@@ -80,12 +81,12 @@ header {
 /* Taille de police titre H1 et marges */
 h1 {
   font-size: 2em;
-  margin: 0 4%;
+  margin: 0% 0% 0% 4%;
 }
 
 /* Taille de police nav et marges */
 nav {
-  margin: 0 3%;
+  margin: 0% 3% 0% 0%;
   font-size: 1em;
 }
 
@@ -94,16 +95,28 @@ nav a {
   margin-left: 20px;
 }
 
-/* Texte lien par défaut couleur bleu */
+/* Texte nav par défaut couleur bleu */
 a:link {
   text-decoration: none;
   color: #13afda;
 }
 
-/* Texte lien visité couleur bleu */
+/* Texte nav visité couleur bleu */
 a:visited {
   text-decoration: none;
   color: #13afda;
+}
+
+/* Texte h1 par défaut couleur noir */
+h1 a:link {
+  text-decoration: none;
+  color: black;
+}
+
+/* Texte h1 visité par défaut couleur noir */
+h1 a:visited {
+  text-decoration: none;
+  color: black;
 }
 
 /*----style profile----*/
@@ -200,8 +213,14 @@ a:visited {
   text-align: center;
 }
 
+/* Interligne h2 */
 .a-propos h2 {
   line-height: 30px;
+}
+
+/* Saut de ligne Julien Gabriel none en version ordinateur */
+.julien-gabriel-saut {
+  display: none;
 }
 
 /*----style formations----*/
@@ -225,39 +244,47 @@ a:visited {
 
 /*----style experiences----*/
 
+/* Padding texte expérience */
 .experiences-texte {
   padding: 5% 18% 5% 18%;
 }
 
+/* Liste en disque */
 ul {
   list-style: disc inside;
 }
 
+/* Style bordure */
 .experiences-trait {
   border-left: solid #13afda 1px;
   padding-left: 4px;
 }
 
+/* Saut de ligne pour les liens */
 .wordbreak {
   word-break: break-all;
 }
 
 /*----style temoignages----*/
 
+/* Fond en bleu et police blanche */
 #temoignages {
   background-color: #13afda;
   color: white;
 }
 
+/* Padding pour h2 */
 .temoignages-h2 {
   padding: 5% 0% 4% 18%;
 }
 
+/* Affichage en flex et padding du texte */
 .temoignages-flex {
   display: flex;
   padding: 0% 17% 5% 17%;
 }
 
+/* Flex en colonne et marges */
 .temoignages-text-1,
 .temoignages-text-2 {
   display: flex;
@@ -266,22 +293,26 @@ ul {
   margin-right: 5em;
 }
 
+/* Flex en colonne et marges */
 .temoignages-text-3 {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
 
+/* Texte justifié */
 .temoignages-flex blockquote {
   text-align: justify;
   width: 100%;
 }
 
+/* Titre h3 centré */
 .temoignages-flex h3 {
   text-align: center;
   width: 100%;
 }
 
+/* Picto quote taille, flex end et marges */
 .temoignages-flex img {
   align-self: flex-end;
   margin: 8% 50% 0% 50%;
@@ -290,14 +321,17 @@ ul {
 
 /*----style realisations----*/
 
+/* Marges h2 */
 .realisations-h2 {
   padding: 5% 0% 4% 18%;
 }
 
+/* Padding */
 .realisations-ordinateurs {
   padding: 0% 0% 0% 10%;
 }
 
+/* Tailles images ordinateurs et padding */
 .realisations-ordinateurs img {
   width: 31%;
   height: auto;
@@ -307,48 +341,48 @@ ul {
 
 /*----competences----*/
 
+/* Fond bleu */
 #competences {
   background-color: #13afda;
 }
 
+/* Police blanche et padding h2 */
 .competences-h2 {
   padding: 5% 0% 4% 18%;
   color: white;
 }
 
+/* Flex, padding et police blanche */
 .comptences-texte {
   display: flex;
   padding: 2% 10% 5% 18%;
   color: white;
 }
 
+/* Flex, padding et police blanche */
 .competences-texte-informatique {
   padding-right: 2%;
   width: 40%;
 }
 
+/* Style bordure */
 .competences-texte-informatique ul,
-.competences-texte-informatique h3 {
-  padding-left: 4px;
-  border-left: solid 1px white;
-}
-
-.competences-texte-linguistique {
-  width: 40%;
-}
-
-.competences-texte-linguistique ul,
-.competences-texte-linguistique h3 {
-  padding-left: 4px;
-  border-left: solid 1px white;
-}
-
-.competences-texte-certifications {
-  width: 40%;
-}
-
+.competences-texte-informatique h3,
 .competences-texte-certifications ul,
 .competences-texte-certifications h3 {
+  padding-left: 4px;
+  border-left: solid 1px white;
+}
+
+/* Taile pavé linguistique et certifications */
+.competences-texte-linguistique,
+.competences-texte-certifications {
+  width: 25%;
+}
+
+/* Style bordure */
+.competences-texte-linguistique ul,
+.competences-texte-linguistique h3 {
   padding-left: 4px;
   border-left: solid 1px white;
 }
@@ -364,6 +398,28 @@ ul {
     display: flex;
     justify-content: center;
     height: 80px;
+    background-color: #13afda;
+  }
+
+  header a:link,
+  header a:visited,
+  header span {
+    color: white;
+  }
+}
+
+/*----version tablette header----*/
+
+@media screen and (min-width: 935px) and (max-width: 1115px) {
+  header {
+    justify-content: center;
+  }
+  h1 {
+    font-size: 1.5em;
+  }
+
+  nav {
+    font-size: 0.8em;
   }
 }
 
@@ -417,6 +473,10 @@ ul {
 
   .a-propos p {
     text-align: justify;
+  }
+
+  .julien-gabriel-saut {
+    display: block;
   }
 }
 
