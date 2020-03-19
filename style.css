@@ -137,10 +137,9 @@ h1 a:visited {
   height: 470px;
 }
 
-/* Texte à côté de photo de profil en flex, aligné à gauche et au centre, en direction colomne, taille de 470px largeur et hauteur, fond couleur blanc */
+/* Texte à côté de photo de profil en flex, aligné au centre, en direction colonne, taille de 470px largeur et hauteur, fond couleur blanc */
 .profile-text {
   display: flex;
-  align-items: left;
   justify-content: center;
   flex-direction: column;
   width: 470px;
