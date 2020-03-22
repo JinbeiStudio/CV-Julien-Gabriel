@@ -78,6 +78,16 @@ header {
   line-height: 30px;
 }
 
+/* Cacher le menu hamburger*/
+label {
+  display: none;
+}
+
+/* Cacher le toggle*/
+#toggle {
+  display: none;
+}
+
 /* Taille de police titre H1 et marges */
 h1 {
   font-size: 2em;
@@ -394,36 +404,131 @@ ul {
 /*----version mobile header----*/
 
 @media screen and (max-width: 660px) {
-  nav {
-    display: none;
+  /* Scrolling de la navigation s'arrête avant le contenu */
+  html {
+    scroll-padding: 80px;
+  }
+
+  h1 a:link,
+  h1 a:visited,
+  h1 span {
+    color: white;
+    text-align: center;
   }
 
   header {
-    display: flex;
-    justify-content: center;
-    height: 80px;
+    display: block;
+    line-height: 75px;
     background-color: #13afda;
+    color: white;
+    height: 80px;
   }
 
-  header a:link,
-  header a:visited,
-  header span {
+  h1 {
+    font-size: 1.8em;
+    margin-left: 5%;
+  }
+
+  label {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 5%;
+    margin: 0;
     color: white;
+    font-size: 2em;
+    text-align: right;
+    float: right;
+    width: 50px;
+  }
+
+  .menu {
+    text-align: center;
+    background-color: white;
+    width: 100%;
+    display: none;
+  }
+
+  .menu a {
+    display: block;
+    border-bottom: 1px solid;
+    margin: 0;
+    line-height: 50px;
+    clear: right;
+  }
+
+  #toggle:checked + .menu {
+    display: block;
+  }
+
+  /* Cacher le toggle*/
+  #toggle {
+    display: none;
   }
 }
 
 /*----version tablette header----*/
 
-@media screen and (min-width: 935px) and (max-width: 1115px) {
-  header {
-    justify-content: center;
-  }
-  h1 {
-    font-size: 1.5em;
+@media screen and (max-width: 1120px) and (min-width: 660px) {
+  html {
+    scroll-padding: 75px;
   }
 
-  nav {
-    font-size: 0.8em;
+  h1 a:link,
+  h1 a:visited,
+  h1 span {
+    text-align: center;
+  }
+
+  header {
+    display: block;
+    line-height: 80px;
+    height: 80px;
+  }
+
+  h1 {
+    font-size: 2em;
+    margin-left: 5%;
+  }
+
+  label {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 5%;
+    margin: 0;
+    color: #13afda;
+    font-size: 2em;
+    text-align: right;
+    float: right;
+    width: 50px;
+  }
+
+  .menu {
+    text-align: center;
+    background-color: #13afda;
+    width: 100%;
+    display: none;
+  }
+
+  .menu a {
+    display: block;
+    border-bottom: 1px solid;
+    margin: 0;
+    line-height: 50px;
+    clear: right;
+    color: white;
+  }
+
+  #toggle:checked + .menu {
+    display: block;
+  }
+
+  /* Cacher le toggle*/
+  #toggle {
+    display: none;
   }
 }
 
