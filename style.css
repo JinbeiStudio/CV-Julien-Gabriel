@@ -406,7 +406,7 @@ ul {
 @media screen and (max-width: 660px) {
   /* Scrolling de la navigation s'arrête avant le contenu */
   html {
-    scroll-padding: 100px;
+    scroll-padding: 80px;
   }
 
   h1 a:link,
@@ -472,7 +472,7 @@ ul {
 
 @media screen and (max-width: 1120px) and (min-width: 660px) {
   html {
-    scroll-padding: 100px;
+    scroll-padding: 80px;
   }
 
   h1 a:link,
