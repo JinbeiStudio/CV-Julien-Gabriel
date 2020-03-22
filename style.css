@@ -78,7 +78,7 @@ header {
   line-height: 30px;
 }
 
-/* Cacher le menu hamburger*/
+/* Cacher le bouton hamburger*/
 label {
   display: none;
 }
