@@ -15,6 +15,7 @@
     />
     <link href="reset.css" rel="stylesheet" />
     <link href="style.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
 
   <body>
@@ -42,7 +43,11 @@
       <!-- PROFILE -->
       <section class="profile">
         <!-- photo de profile -->
-        <div class="profile-picture">
+        <div
+          class="profile-picture"
+          data-aos="fade-right"
+          data-aos-duration="1500"
+        >
           <img
             src="images/juliengabriel.jpg"
             alt="Julien Gabriel"
@@ -51,7 +56,7 @@
           />
         </div>
         <!-- texte profile -->
-        <div class="profile-text">
+        <div class="profile-text" data-aos="fade-left" data-aos-duration="1500">
           <div class="saut-ligne-double">
             <h2>Julien Gabriel</h2>
             <p class="webdesigner">Développeur Web</p>
@@ -81,7 +86,11 @@
       <section id="a-propos">
         <div class="apropos-bande">
           <!-- pictogrammes -->
-          <div class="apropos-bande-picto">
+          <div
+            class="apropos-bande-picto"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+          >
             <a href="documents/cv.pdf"
               ><img
                 src="images/pdf.png"
@@ -137,7 +146,11 @@
       <section id="formations">
         <div class="formations-texte">
           <!-- titre formations -->
-          <h2 class="saut-ligne-grand">
+          <h2
+            class="saut-ligne-grand"
+            data-aos="fade-left"
+            data-aos-duration="1500"
+          >
             <span class="h2-bleu-souligne">FOR</span>MATIONS
           </h2>
 
@@ -180,7 +193,11 @@
       <section id="experiences">
         <div class="experiences-texte">
           <!-- titre experiences -->
-          <h2 class="saut-ligne-grand">
+          <h2
+            class="saut-ligne-grand"
+            data-aos="fade-left"
+            data-aos-duration="1500"
+          >
             <span class="h2-blanc-souligne">EXP</span>ÉRIENCES
           </h2>
 
@@ -320,7 +337,11 @@
         </div>
 
         <div class="temoignages-flex">
-          <div class="temoignages-text-1">
+          <div
+            class="temoignages-text-1"
+            data-aos="flip-right"
+            data-aos-duration="1500"
+          >
             <!-- temoignage sophie -->
             <h3 class="saut-ligne-grand">SOPHIE MANÉGRIER, S'COACH</h3>
             <blockquote>
@@ -343,7 +364,12 @@
           </div>
 
           <!-- temoignage olivier -->
-          <div class="temoignages-text-2">
+          <div
+            class="temoignages-text-2"
+            data-aos="flip-right"
+            data-aos-duration="1500"
+            data-aos-delay="500"
+          >
             <h3 class="saut-ligne-grand">OLIVIER POZZO, LUTHIER</h3>
             <blockquote>
               "Je suis super content de mon site internet créé par Jinbei
@@ -362,7 +388,12 @@
           </div>
 
           <!-- temoignage anthony -->
-          <div class="temoignages-text-3">
+          <div
+            class="temoignages-text-3"
+            data-aos="flip-right"
+            data-aos-duration="1500"
+            data-aos-delay="1000"
+          >
             <h3 class="saut-ligne-grand">ANTHONY HERAULT, BE4YOU</h3>
             <blockquote>
               "Écoute du besoin, réactivité et créativité sont les 3 termes qui
@@ -384,7 +415,11 @@
 
       <!-- REALISATIONS -->
       <section id="realisations">
-        <div class="realisations-h2">
+        <div
+          class="realisations-h2"
+          data-aos="fade-left"
+          data-aos-duration="1500"
+        >
           <!-- titre realisations -->
           <h2><span class="h2-blanc-souligne">RÉA</span>LISATIONS</h2>
         </div>
@@ -423,7 +458,12 @@
 
       <!-- COMPETENCES -->
       <section id="competences">
-        <div class="competences-h2">
+        <div
+          class="competences-h2"
+          data-aos="fade-left"
+          data-aos-duration="1500"
+          data-aos-delay="1000"
+        >
           <!-- titre competences -->
           <h2><span class="h2-bleu-souligne">COM</span>PÉTENCES</h2>
         </div>
@@ -467,5 +507,10 @@
         </div>
       </section>
     </main>
+    <!-- animations aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({ disable: "mobile" });
+    </script>
   </body>
 </html>
