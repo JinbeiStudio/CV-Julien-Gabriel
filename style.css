@@ -417,6 +417,11 @@ footer {
   /* Scrolling de la navigation s'arrête avant le contenu */
   html {
     scroll-padding: 80px;
+    overflow: hidden;
+  }
+
+  body {
+    overflow: hidden;
   }
 
   h1 a:link,
